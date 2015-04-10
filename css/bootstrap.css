@@ -5679,15 +5679,6 @@ a.list-group-item-danger.active:focus {
 	background-color: #2980b9;
 }
 
-.kn {
-	background-color: #f1c40f;
-	color: #ecf0f1 !important;
-}
-
-.kn:hover {
-	background-color: #f39c12;
-}
-
 .tb {
 	background-color: #34495e;
 	color: #ecf0f1 !important;
@@ -5713,6 +5704,15 @@ a.list-group-item-danger.active:focus {
 
 .fm:hover {
 	background-color: #c0392b;
+}
+
+.kn {
+	background-color: #f1c40f;
+	color: #ecf0f1 !important;
+}
+
+.kn:hover {
+	background-color: #f39c12;
 }
 
 .is{

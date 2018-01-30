@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+$sm-max-width: 576px;
+$md-min-width: $sm-max-width + 1px;
+$md-max-width: 1024px;
+$lg-min-width: $md-max-width + 1px;
+$sm-division: 3;
+$md-division: 5;
+$lg-division: 7;
+
+$color-twitter: #1da1f2;
+$color-mastodon: #3b94d4;
+$color-github: #333;
+$color-tumblr: #35465c;
+$color-flickr: #212124;
+$color-foursquare: #f94877;
+$color-fitbit: #4cc2c4;
+
+html {
+  background-color: #ecf0f1;
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osxf-font-smoothing: grayscale;
+}
+h1 {
+  display: block;
+  font-family: 'Avenir Next', 'Segoe UI', Roboto, Oxygen, 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #2c3e50;
+  margin: 0.8em 0;
+  @media screen and (max-width: $sm-max-width) {
+    font-size: 3.8em;
+  }
+  @media screen and (min-width: $md-min-width) and (max-width: $md-max-width) {
+    font-size: 6.2em;
+  }
+  @media screen and (min-width: $lg-min-width) {
+    font-size: 8.5em;
+  }
+}
+.container {
+  display: grid;
+  a {
+    div {
+      position: relative;
+      svg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 55%;
+        height: 55%;
+      }
+    }
+  }
+  #tw {
+    background-color: $color-twitter;
+  }
+  #ma {
+    background-color: $color-mastodon;
+  }
+  #gi {
+    background-color: $color-github;
+  }
+  #tu {
+    background-color: $color-tumblr;
+  }
+  #fl {
+    background-color: $color-flickr;
+  }
+  #fo {
+    background-color: $color-foursquare;
+  }
+  #fi {
+    background-color: $color-fitbit;
+  }
+}
+@media screen and (max-width: $sm-max-width) {
+  .container {
+    grid-template-columns: repeat(auto-fill, calc(100vw / #{$sm-division}));
+    & > a {
+      & > div {
+        height: calc(100vw / #{$sm-division});
+      }
+    }
+  }
+}
+@media screen and (min-width: $md-min-width) and (max-width: $md-max-width) {
+  .container {
+    grid-template-columns: repeat(auto-fill, calc(100vw / #{$md-division}));
+    & > a {
+      & > div {
+        height: calc(100vw / #{$md-division});
+      }
+    }
+  }
+}
+@media screen and (min-width: $lg-min-width) {
+  .container {
+    grid-template-columns: repeat(auto-fill, calc(100vw / #{$lg-division}));
+    & > a {
+      & > div {
+        height: calc(100vw / #{$lg-division});
+      }
+    }
+  }
+}

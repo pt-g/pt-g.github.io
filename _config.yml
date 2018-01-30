@@ -1,0 +1,15 @@
+title: 8tak4.com
+description: "8tak4について"
+url: "https://www.8tak4.com"
+
+plugins:
+  - jekyll-haml
+  - jekyll-sass
+sass:
+  syntax: scss
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - _vendor

@@ -15,6 +15,7 @@ $color-tumblr: #35465c;
 $color-flickr: #212124;
 $color-foursquare: #f94877;
 $color-fitbit: #4cc2c4;
+$color-booklog: #8bafbf;
 
 html {
   background-color: #ecf0f1;
@@ -80,6 +81,9 @@ h1 {
   }
   #fi {
     background-color: $color-fitbit;
+  }
+  #bo {
+    background-color: $color-booklog;
   }
 }
 @media screen and (max-width: $sm-max-width) {

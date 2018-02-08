@@ -6,7 +6,7 @@ $md-max-width: 1024px;
 $lg-min-width: $md-max-width + 1px;
 $sm-division: 3;
 $md-division: 5;
-$lg-division: 7;
+$lg-division: 3;
 
 $color-twitter: #1da1f2;
 $color-mastodon: #3b94d4;
@@ -18,7 +18,7 @@ $color-fitbit: #4cc2c4;
 $color-booklog: #8bafbf;
 
 html {
-  background-color: #ecf0f1;
+  background-color: #fafafa;
   height: 100%;
 }
 body {
@@ -46,6 +46,9 @@ h1 {
 }
 .container {
   display: grid;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
   a {
     div {
       position: relative;
@@ -108,10 +111,10 @@ h1 {
 }
 @media screen and (min-width: $lg-min-width) {
   .container {
-    grid-template-columns: repeat(auto-fill, calc(100vw / #{$lg-division}));
+    grid-template-columns: 180px 180px 180px;
     & > a {
       & > div {
-        height: calc(100vw / #{$lg-division});
+        height: 180px;
       }
     }
   }

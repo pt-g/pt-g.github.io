@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /index.orig.html
+Disallow: /about.html
+Disallow: /about.orig.html
